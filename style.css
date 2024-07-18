@@ -1,0 +1,150 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  background-color: #f0f2f5;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff;
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-icon {
+  color: #333;
+  text-decoration: none;
+  font-size: 20px;
+  margin: 0 10px;
+  transition: color 0.3s;
+}
+
+.navbar-icon:hover {
+  color: #007bff;
+}
+
+.main-container {
+  display: flex;
+  justify-content: space-between; /* Spread out the elements */
+  width: 100%;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-grow: 1; /* Allow the main container to grow and fill the space */
+}
+
+.sidebar,
+.rightbar {
+  width: 400px;
+  height: 1200px;
+  background-color: #fff;
+  padding: 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
+
+.sidebar a,
+.rightbar a {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  transition: background-color 0.3s;
+}
+
+.sidebar a:hover,
+.rightbar a:hover {
+  background-color: #f0f0f0;
+}
+
+.sidebar a i,
+.rightbar a i {
+  margin-right: 10px;
+}
+
+.main-content {
+  flex-grow: 1;
+  max-width: 600px; /* Restrict the max width of the main content */
+  padding: 20px;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  margin: 0 10px;
+}
+
+.post {
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+.post-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.post-header .avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.post h2 {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.post p {
+  margin: 5px 0;
+}
+
+.post-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+
+.post-stats {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+.post-stats p {
+  margin: 0;
+  font-size: 14px;
+  color: #555;
+}
+
+.post-actions {
+  display: flex;
+  justify-content: space-around;
+}
+
+.post-actions button {
+  background: none;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  color: #555;
+  font-size: 14px;
+  transition: color 0.3s;
+}
+
+.post-actions button:hover {
+  color: #007bff;
+}
+
+.post-actions button i {
+  margin-right: 5px;
+}
